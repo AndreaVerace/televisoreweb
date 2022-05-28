@@ -11,4 +11,6 @@ public interface TelevisoreService {
 	
 	public List<Televisore> cercaPerMarcaEModello(String marca,String modello);
 	
+	public Televisore get(Long id) throws Exception;
+	
 }

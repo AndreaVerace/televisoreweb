@@ -17,8 +17,13 @@ public class TelevisoreDAOImpl implements TelevisoreDAO {
 
 	@Override
 	public Televisore get(Long id) throws Exception {
-		// TODO Auto-generated method stub
-		return null;
+		Televisore tvDettaglio = new Televisore();
+		for(Televisore tvItem : DB_Mock.LISTA_TELEVISORI) {
+			if(tvItem.getId() == id) {
+				tvDettaglio = tvItem;
+			}
+		}
+		return tvDettaglio;
 	}
 
 	@Override

@@ -19,4 +19,9 @@ public class TelevisoreServiceImpl implements TelevisoreService {
 		return televisoreDAO.cercaPerMarcaEModello(marca, modello);
 	}
 
+	@Override
+	public Televisore get(Long id) throws Exception {
+		return televisoreDAO.get(id);
+	}
+
 }
