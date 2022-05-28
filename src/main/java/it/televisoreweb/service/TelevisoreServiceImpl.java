@@ -24,4 +24,15 @@ public class TelevisoreServiceImpl implements TelevisoreService {
 		return televisoreDAO.get(id);
 	}
 
+	@Override
+	public void inserisciNuovo(Televisore input) throws Exception {
+		televisoreDAO.insert(input);
+		
+	}
+
+	@Override
+	public List<Televisore> elencoTutti() throws Exception {
+		return televisoreDAO.list();
+	}
+
 }

@@ -13,4 +13,8 @@ public interface TelevisoreService {
 	
 	public Televisore get(Long id) throws Exception;
 	
+	public void inserisciNuovo(Televisore input) throws Exception;
+	
+	public List<Televisore> elencoTutti() throws Exception;
+	
 }
