@@ -17,4 +17,6 @@ public interface TelevisoreService {
 	
 	public List<Televisore> elencoTutti() throws Exception;
 	
+	public void eliminaEsistente(Televisore input) throws Exception;
+	
 }

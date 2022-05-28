@@ -35,4 +35,10 @@ public class TelevisoreServiceImpl implements TelevisoreService {
 		return televisoreDAO.list();
 	}
 
+	@Override
+	public void eliminaEsistente(Televisore input) throws Exception {
+		televisoreDAO.delete(input);
+		
+	}
+
 }

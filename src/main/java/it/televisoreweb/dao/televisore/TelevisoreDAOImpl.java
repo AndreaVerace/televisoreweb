@@ -39,8 +39,7 @@ public class TelevisoreDAOImpl implements TelevisoreDAO {
 
 	@Override
 	public int delete(Televisore input) throws Exception {
-		// TODO Auto-generated method stub
-		return 0;
+		return DB_Mock.LISTA_TELEVISORI.remove(input)?1:0;
 	}
 
 	@Override
