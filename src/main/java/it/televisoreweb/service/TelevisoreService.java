@@ -19,4 +19,6 @@ public interface TelevisoreService {
 	
 	public void eliminaEsistente(Televisore input) throws Exception;
 	
+	public void update(Televisore input) throws Exception;
+	
 }

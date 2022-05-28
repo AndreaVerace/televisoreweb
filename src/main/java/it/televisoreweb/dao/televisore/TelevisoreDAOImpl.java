@@ -27,8 +27,7 @@ public class TelevisoreDAOImpl implements TelevisoreDAO {
 
 	@Override
 	public int update(Televisore input) throws Exception {
-		// TODO Auto-generated method stub
-		return 0;
+		return DB_Mock.LISTA_TELEVISORI.contains(input)?1:0;
 	}
 
 	@Override
